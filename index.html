@@ -1,0 +1,695 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Brahmani Electrical Works | Ankleshwar</title>
+  <meta name="description" content="Brahmani Electrical Works by Mr. Kiran Prajapati. Electrical services in Ankleshwar, Gujarat.">
+
+  <style>
+    :root {
+      --navy: #101b35;
+      --navy-light: #1b2b4c;
+      --gold: #f4bd50;
+      --white: #ffffff;
+      --bg: #f5f7fb;
+      --text: #263247;
+      --muted: #68758a;
+      --card: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: 0.3s;
+    }
+
+    body.dark {
+      --bg: #0c1323;
+      --text: #eef2fa;
+      --muted: #b4bfd2;
+      --card: #151f33;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .topbar {
+      background: var(--gold);
+      color: var(--navy);
+      padding: 9px 5%;
+      text-align: center;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 18px #0002;
+    }
+
+    .navbar {
+      max-width: 1200px;
+      margin: auto;
+      padding: 15px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      color: white;
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+
+    .logo span {
+      color: var(--gold);
+      display: block;
+      font-size: 12px;
+      letter-spacing: 3px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 19px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .tools {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    select, .theme-btn {
+      padding: 9px;
+      border-radius: 8px;
+      border: 1px solid #ffffff40;
+      background: var(--navy-light);
+      color: white;
+      cursor: pointer;
+    }
+
+    .hero {
+      background:
+        radial-gradient(circle at 85% 20%, #f4bd5030, transparent 32%),
+        linear-gradient(130deg, var(--navy), #172b50);
+      color: white;
+      padding: 75px 22px;
+      overflow: hidden;
+    }
+
+    .hero-inner {
+      max-width: 1120px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      border: 1px solid #f4bd5070;
+      border-radius: 30px;
+      padding: 7px 15px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.12;
+      margin-bottom: 20px;
+    }
+
+    h1 span {
+      color: var(--gold);
+    }
+
+    .hero-text {
+      color: #e0e6f0;
+      font-size: 17px;
+      max-width: 570px;
+      margin-bottom: 18px;
+    }
+
+    .owner {
+      margin: 20px 0 26px;
+      padding-left: 13px;
+      border-left: 3px solid var(--gold);
+    }
+
+    .owner small {
+      color: #c4cee0;
+      display: block;
+    }
+
+    .owner strong {
+      font-size: 19px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      border-radius: 9px;
+      padding: 13px 19px;
+      font-weight: bold;
+      text-align: center;
+      transition: 0.25s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .btn-outline {
+      color: white;
+      border: 1px solid #ffffff80;
+    }
+
+    .hero-image {
+      background: #ffffff12;
+      border: 1px solid #ffffff30;
+      padding: 12px;
+      border-radius: 22px;
+      box-shadow: 0 20px 50px #0003;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 350px;
+      display: block;
+      object-fit: cover;
+      border-radius: 15px;
+      background: #243654;
+    }
+
+    .image-caption {
+      color: #e0e6f0;
+      text-align: center;
+      padding-top: 12px;
+      font-size: 13px;
+    }
+
+    .section {
+      max-width: 1120px;
+      margin: auto;
+      padding: 55px 22px;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-heading h2 {
+      color: var(--text);
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .trust-card {
+      background: var(--card);
+      border-radius: 15px;
+      padding: 26px 18px;
+      text-align: center;
+      border: 1px solid #8996aa20;
+      box-shadow: 0 8px 25px #00000008;
+      transition: 0.25s;
+    }
+
+    .trust-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--gold);
+    }
+
+    .trust-icon {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .trust-card h3 {
+      color: var(--text);
+      margin-bottom: 7px;
+    }
+
+    .trust-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .call-strip {
+      max-width: 1076px;
+      margin: 0 auto 55px;
+      padding: 25px;
+      border-radius: 16px;
+      background: var(--card);
+      border: 1px solid #8996aa25;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .call-strip h2 {
+      color: var(--text);
+      font-size: 22px;
+    }
+
+    .call-strip p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .phone-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .phone-links a {
+      color: var(--navy);
+      background: var(--gold);
+      padding: 11px 15px;
+      border-radius: 9px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #0a1225;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer h3 {
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    footer p {
+      color: #c6cede;
+      font-size: 14px;
+      margin: 5px;
+    }
+
+    footer a {
+      color: var(--gold);
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 200;
+      background: #25d366;
+      color: white;
+      padding: 13px 18px;
+      border-radius: 40px;
+      font-weight: bold;
+      box-shadow: 0 5px 20px #0003;
+    }
+
+    @media (max-width: 850px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-image {
+        max-width: 600px;
+        width: 100%;
+        margin: auto;
+      }
+
+      .navbar {
+        justify-content: center;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .call-strip {
+        margin-left: 22px;
+        margin-right: 22px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .hero {
+        padding: 48px 18px;
+      }
+
+      .hero-image img {
+        height: 240px;
+      }
+
+      nav {
+        gap: 12px;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+
+      .section-heading h2 {
+        font-size: 25px;
+      }
+
+      .buttons .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar" id="topbar">
+    ⚡ Professional Electrical Services • Ankleshwar, Gujarat
+  </div>
+
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">
+        ⚡ BRAHMANI
+        <span>ELECTRICAL WORKS</span>
+      </a>
+
+      <nav>
+        <a href="index.html" id="navHome">Home</a>
+        <a href="services.html" id="navServices">Services</a>
+        <a href="order.html" id="navBooking">Book Service</a>
+        <a href="contact.html" id="navContact">Contact</a>
+      </nav>
+
+      <div class="tools">
+        <select id="language" aria-label="Select language">
+          <option value="en">English</option>
+          <option value="gu">ગુજરાતી</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+        <button class="theme-btn" id="themeButton" type="button">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow" id="eyebrow">YOUR LOCAL ELECTRICAL SERVICE</div>
+
+          <h1 id="heroTitle">
+            Brahmani <span>Electrical Works</span>
+          </h1>
+
+          <p class="hero-text" id="heroText">
+            Professional electrical services for homes, shops and offices
+            in Ankleshwar. Reliable service for your electrical needs.
+          </p>
+
+          <div class="owner">
+            <small id="ownerLabel">Owned and managed by</small>
+            <strong>Mr. Kiran Prajapati</strong>
+          </div>
+
+          <p class="hero-text" id="areaText">
+            📍 Serving Ankleshwar, Gujarat only
+          </p>
+
+          <div class="buttons">
+            <a class="btn btn-gold" href="order.html" id="bookButton">
+              ⚡ Book a Service
+            </a>
+
+            <a class="btn btn-outline" href="https://wa.me/919426521721"
+               target="_blank" rel="noopener noreferrer" id="whatsappButton">
+              WhatsApp Us
+            </a>
+
+            <a class="btn btn-outline" href="tel:9426521721">
+              ☎ 9426521721
+            </a>
+
+            <a class="btn btn-outline" href="tel:7043731721">
+              ☎ 7043731721
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Ankleshwar_City.jpg/960px-Ankleshwar_City.jpg"
+            alt="Ankleshwar city"
+            onerror="this.onerror=null; this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Ankleshwar_City.jpg';"
+          >
+          <p class="image-caption" id="imageCaption">
+            Serving Ankleshwar, Gujarat
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2 id="whyTitle">Why Choose Us?</h2>
+        <p id="whySubtitle">Electrical services focused on your local needs.</p>
+      </div>
+
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-icon">📍</div>
+          <h3 id="card1Title">Ankleshwar Only</h3>
+          <p id="card1Text">Our service area is Ankleshwar, Gujarat.</p>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon">⚡</div>
+          <h3 id="card2Title">Electrical Work</h3>
+          <p id="card2Text">Wiring, fitting, installation and repair services.</p>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon">📞</div>
+          <h3 id="card3Title">Direct Contact</h3>
+          <p id="card3Text">Contact us by phone or WhatsApp for enquiries.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="call-strip">
+      <div>
+        <h2 id="callTitle">Need Electrical Service?</h2>
+        <p id="callText">Call us directly to discuss your work.</p>
+      </div>
+
+      <div class="phone-links">
+        <a href="tel:9426521721">☎ 9426521721</a>
+        <a href="tel:7043731721">☎ 7043731721</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h3>Brahmani Electrical Works</h3>
+    <p>Owner: Mr. Kiran Prajapati</p>
+    <p id="footerArea">📍 Ankleshwar, Gujarat</p>
+    <p>
+      <a href="tel:9426521721">9426521721</a>
+      &nbsp; | &nbsp;
+      <a href="tel:7043731721">7043731721</a>
+    </p>
+    <p>
+      <a href="contact.html" id="footerContact">Contact Us</a>
+      &nbsp; | &nbsp;
+      <a href="services.html" id="footerServices">Our Services</a>
+    </p>
+    <p>© <span id="year"></span> Brahmani Electrical Works. All rights reserved.</p>
+  </footer>
+
+  <a class="whatsapp-float"
+     href="https://wa.me/919426521721"
+     target="_blank"
+     rel="noopener noreferrer">
+    WhatsApp
+  </a>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const themeButton = document.getElementById("themeButton");
+
+    themeButton.addEventListener("click", function () {
+      document.body.classList.toggle("dark");
+      themeButton.textContent =
+        document.body.classList.contains("dark") ? "☀️" : "🌙";
+    });
+
+    const translations = {
+      en: {
+        topbar: "⚡ Professional Electrical Services • Ankleshwar, Gujarat",
+        navHome: "Home",
+        navServices: "Services",
+        navBooking: "Book Service",
+        navContact: "Contact",
+        eyebrow: "YOUR LOCAL ELECTRICAL SERVICE",
+        heroTitle: 'Brahmani <span>Electrical Works</span>',
+        heroText: "Professional electrical services for homes, shops and offices in Ankleshwar. Reliable service for your electrical needs.",
+        ownerLabel: "Owned and managed by",
+        areaText: "📍 Serving Ankleshwar, Gujarat only",
+        bookButton: "⚡ Book a Service",
+        whatsappButton: "WhatsApp Us",
+        imageCaption: "Serving Ankleshwar, Gujarat",
+        whyTitle: "Why Choose Us?",
+        whySubtitle: "Electrical services focused on your local needs.",
+        card1Title: "Ankleshwar Only",
+        card1Text: "Our service area is Ankleshwar, Gujarat.",
+        card2Title: "Electrical Work",
+        card2Text: "Wiring, fitting, installation and repair services.",
+        card3Title: "Direct Contact",
+        card3Text: "Contact us by phone or WhatsApp for enquiries.",
+        callTitle: "Need Electrical Service?",
+        callText: "Call us directly to discuss your work.",
+        footerArea: "📍 Ankleshwar, Gujarat",
+        footerContact: "Contact Us",
+        footerServices: "Our Services"
+      },
+
+      gu: {
+        topbar: "⚡ પ્રોફેશનલ ઇલેક્ટ્રિકલ સર્વિસ • અંકલેશ્વર, ગુજરાત",
+        navHome: "હોમ",
+        navServices: "સર્વિસ",
+        navBooking: "બુકિંગ",
+        navContact: "સંપર્ક",
+        eyebrow: "તમારી લોકલ ઇલેક્ટ્રિકલ સર્વિસ",
+        heroTitle: 'બ્રહ્માણી <span>ઇલેક્ટ્રિકલ વર્ક્સ</span>',
+        heroText: "અંકલેશ્વરમાં ઘર, દુકાન અને ઓફિસ માટે પ્રોફેશનલ ઇલેક્ટ્રિકલ સર્વિસ. તમારી ઇલેક્ટ્રિકલ જરૂરિયાત માટે અમારો સંપર્ક કરો.",
+        ownerLabel: "માલિક",
+        areaText: "📍 ફક્ત અંકલેશ્વર, ગુજરાતમાં સર્વિસ",
+        bookButton: "⚡ સર્વિસ બુક કરો",
+        whatsappButton: "વોટ્સએપ કરો",
+        imageCaption: "અંકલેશ્વર, ગુજરાતમાં સર્વિસ",
+        whyTitle: "અમને શા માટે પસંદ કરો?",
+        whySubtitle: "તમારી લોકલ જરૂરિયાત માટે ઇલેક્ટ્રિકલ સર્વિસ.",
+        card1Title: "ફક્ત અંકલેશ્વર",
+        card1Text: "અમારી સર્વિસ અંકલેશ્વર, ગુજરાતમાં છે.",
+        card2Title: "ઇલેક્ટ્રિકલ કામ",
+        card2Text: "વાયરિંગ, ફિટિંગ, ઇન્સ્ટોલેશન અને રિપેરિંગ.",
+        card3Title: "સીધો સંપર્ક",
+        card3Text: "પૂછપરછ માટે ફોન અથવા વોટ્સએપ કરો.",
+        callTitle: "ઇલેક્ટ્રિકલ સર્વિસ જોઈએ છે?",
+        callText: "તમારા કામની ચર્ચા કરવા સીધો ફોન કરો.",
+        footerArea: "📍 અંકલેશ્વર, ગુજરાત",
+        footerContact: "સંપર્ક કરો",
+        footerServices: "અમારી સર્વિસ"
+      },
+
+      hi: {
+        topbar: "⚡ प्रोफेशनल इलेक्ट्रिकल सर्विस • अंकलेश्वर, गुजरात",
+        navHome: "होम",
+        navServices: "सर्विस",
+        navBooking: "बुकिंग",
+        navContact: "संपर्क",
+        eyebrow: "आपकी लोकल इलेक्ट्रिकल सर्विस",
+        heroTitle: 'ब्रह्माणी <span>इलेक्ट्रिकल वर्क्स</span>',
+        heroText: "अंकलेश्वर में घर, दुकान और ऑफिस के लिए प्रोफेशनल इलेक्ट्रिकल सर्विस। अपनी इलेक्ट्रिकल जरूरतों के लिए संपर्क करें।",
+        ownerLabel: "मालिक",
+        areaText: "📍 केवल अंकलेश्वर, गुजरात में सर्विस",
+        bookButton: "⚡ सर्विस बुक करें",
+        whatsappButton: "व्हाट्सऐप करें",
+        imageCaption: "अंकलेश्वर, गुजरात में सर्विस",
+        whyTitle: "हमें क्यों चुनें?",
+        whySubtitle: "आपकी लोकल जरूरतों के लिए इलेक्ट्रिकल सर्विस।",
+        card1Title: "केवल अंकलेश्वर",
+        card1Text: "हमारी सर्विस अंकलेश्वर, गुजरात में है।",
+        card2Title: "इलेक्ट्रिकल काम",
+        card2Text: "वायरिंग, फिटिंग, इंस्टॉलेशन और रिपेयरिंग।",
+        card3Title: "सीधा संपर्क",
+        card3Text: "पूछताछ के लिए फोन या व्हाट्सऐप करें।",
+        callTitle: "इलेक्ट्रिकल सर्विस चाहिए?",
+        callText: "अपने काम के बारे में बात करने के लिए कॉल करें।",
+        footerArea: "📍 अंकलेश्वर, गुजरात",
+        footerContact: "संपर्क करें",
+        footerServices: "हमारी सर्विस"
+      }
+    };
+
+    const languageSelect = document.getElementById("language");
+
+    languageSelect.addEventListener("change", function () {
+      const selected = translations[this.value] || translations.en;
+
+      Object.keys(selected).forEach(function (id) {
+        const element = document.getElementById(id);
+        if (element) {
+          element.innerHTML = selected[id];
+        }
+      });
+
+      document.documentElement.lang = this.value;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+```html
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Brahmani Electrical Works in Ankleshwar, Gujarat for electrical wiring, fitting and repair services.">
+  <title>Contact Us | Brahmani Electrical Works</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="logo" href="index.html">
+        <span class="logo-icon">⚡</span>
+        <span>Brahmani Electrical Works</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="order.html">Book Service</a>
+        <a href="track.html">Track Request</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <select id="languageSelect" aria-label="Choose language">
+          <option value="gu">ગુજરાતી</option>
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+        <button id="themeToggle" class="theme-btn" type="button" aria-label="Toggle theme">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">WE ARE HERE TO HELP</p>
+        <h1 data-gu="અમારો સંપર્ક કરો"
+            data-en="Contact Us"
+            data-hi="हमसे संपर्क करें">અમારો સંપર્ક કરો</h1>
+        <p data-gu="ઇલેક્ટ્રિકલ કામ માટે અમારો સંપર્ક કરો."
+           data-en="Contact us for your electrical work."
+           data-hi="इलेक्ट्रिकल काम के लिए हमसे संपर्क करें.">
+          ઇલેક્ટ્રિકલ કામ માટે અમારો સંપર્ક કરો.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+
+        <div class="contact-info">
+          <div class="section-heading">
+            <span class="eyebrow">GET IN TOUCH</span>
+            <h2 data-gu="સંપર્ક વિગતો"
+                data-en="Contact Details"
+                data-hi="संपर्क विवरण">સંપર્ક વિગતો</h2>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">👨‍🔧</span>
+            <div>
+              <h3>Mr. Kiran Prajapati</h3>
+              <p>Brahmani Electrical Works</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">📞</span>
+            <div>
+              <h3 data-gu="ફોન નંબર"
+                  data-en="Phone Numbers"
+                  data-hi="फोन नंबर">ફોન નંબર</h3>
+              <p><a href="tel:9426521721">9426521721</a></p>
+              <p><a href="tel:7043731721">7043731721</a></p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">📍</span>
+            <div>
+              <h3 data-gu="સર્વિસ વિસ્તાર"
+                  data-en="Service Area"
+                  data-hi="सेवा क्षेत्र">સર્વિસ વિસ્તાર</h3>
+              <p>Ankleshwar, Gujarat, India</p>
+              <a href="https://www.google.com/maps/search/?api=1&query=Ankleshwar%2C%20Gujarat"
+                 target="_blank" rel="noopener noreferrer">
+                Open Google Maps ↗
+              </a>
+            </div>
+          </div>
+
+          <a class="btn btn-primary contact-whatsapp"
+             href="https://wa.me/919426521721?text=Hello%20Brahmani%20Electrical%20Works%2C%20I%20need%20electrical%20service."
+             target="_blank" rel="noopener noreferrer">
+            💬 Contact on WhatsApp
+          </a>
+
+          <p class="small-note">
+            Service area: Ankleshwar only. Please contact us to confirm availability.
+          </p>
+        </div>
+
+        <div class="contact-form-card">
+          <span class="eyebrow">SEND AN ENQUIRY</span>
+          <h2 data-gu="તમારી વિગતો મોકલો"
+              data-en="Send Your Enquiry"
+              data-hi="अपनी जानकारी भेजें">તમારી વિગતો મોકલો</h2>
+
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="customerName">Your Name *</label>
+              <input id="customerName" name="customerName"
+                     type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="customerPhone">Mobile Number *</label>
+              <input id="customerPhone" name="customerPhone"
+                     type="tel" inputmode="numeric"
+                     placeholder="10-digit mobile number"
+                     pattern="[6-9][0-9]{9}" maxlength="10" required>
+            </div>
+
+            <div class="form-group">
+              <label for="serviceType">Service Required *</label>
+              <select id="serviceType" name="serviceType" required>
+                <option value="">Select a service</option>
+                <option>Electrical Wiring</option>
+                <option>Light Fitting</option>
+                <option>Fan Fitting</option>
+                <option>Inverter Fitting / Work</option>
+                <option>Electrical Repairing</option>
+                <option>Home Electrical Work</option>
+                <option>Shop & Office Electrical Work</option>
+                <option>Other Electrical Work</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="customerAddress">Full Address in Ankleshwar *</label>
+              <textarea id="customerAddress" name="customerAddress"
+                        rows="3" placeholder="Enter your full address"
+                        required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="mapLink">Google Maps Location Link (Optional)</label>
+              <input id="mapLink" name="mapLink" type="url"
+                     placeholder="Paste your Google Maps link">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Additional Details</label>
+              <textarea id="message" name="message" rows="3"
+                        placeholder="Describe your electrical work"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              💬 Send Enquiry on WhatsApp
+            </button>
+          </form>
+
+          <p class="small-note">
+            This form opens WhatsApp with your enquiry details. Please press
+            Send in WhatsApp to deliver the message. The website does not
+            automatically save this form.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <h3>⚡ Brahmani Electrical Works</h3>
+        <p>Owner: Mr. Kiran Prajapati</p>
+        <p>Ankleshwar, Gujarat</p>
+      </div>
+      <div>
+        <p>Call: <a href="tel:9426521721">9426521721</a></p>
+        <p>Call: <a href="tel:7043731721">7043731721</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="currentYear"></span> Brahmani Electrical Works. All rights reserved.
+    </div>
+  </footer>
+
+  <a class="whatsapp-float"
+     href="https://wa.me/919426521721"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Contact us on WhatsApp">💬</a>
+
+  <script src="app.js"></script>
+
+  <script>
+    document.getElementById("currentYear").textContent =
+      new Date().getFullYear();
+
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById("customerName").value.trim();
+      const phone = document.getElementById("customerPhone").value.trim();
+      const service = document.getElementById("serviceType").value;
+      const address = document.getElementById("customerAddress").value.trim();
+      const mapLink = document.getElementById("mapLink").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (!/^[6-9][0-9]{9}$/.test(phone)) {
+        alert("Please enter a valid 10-digit Indian mobile number.");
+        return;
+      }
+
+      if (mapLink && !/^https:\/\/(www\.)?(google\.[a-z.]+\/maps|maps\.app\.goo\.gl\/)/i.test(mapLink)) {
+        alert("Please enter a valid Google Maps link, or leave the field empty.");
+        return;
+      }
+
+      const text =
+        "New Enquiry - Brahmani Electrical Works\n\n" +
+        "Name: " + name + "\n" +
+        "Customer Mobile: " + phone + "\n" +
+        "Service: " + service + "\n" +
+        "Address: " + address + "\n" +
+        "Google Maps: " + (mapLink || "Not provided") + "\n" +
+        "Details: " + (message || "Not provided");
+
+      window.open(
+        "https://wa.me/919426521721?text=" + encodeURIComponent(text),
+        "_blank",
+        "noopener,noreferrer"
+      );
+    });
+  </script>
+</body>
+</html>
+```

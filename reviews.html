@@ -1,0 +1,294 @@
+```html
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reviews and customer feedback for Brahmani Electrical Works, Ankleshwar.">
+  <title>Customer Reviews | Brahmani Electrical Works</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .reviews-section {
+      max-width: 1050px;
+      margin: 40px auto;
+    }
+
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+      margin: 25px 0;
+    }
+
+    .review-card {
+      padding: 24px;
+      border: 1px solid rgba(244, 189, 80, .45);
+      border-radius: 16px;
+      background: var(--card-bg, #fff);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
+    }
+
+    .review-card h3 {
+      margin-top: 0;
+    }
+
+    .review-stars {
+      color: #d99b17;
+      font-size: 23px;
+      letter-spacing: 3px;
+    }
+
+    .review-form {
+      max-width: 700px;
+      margin: 35px auto;
+      padding: 26px;
+      border: 1px solid rgba(244, 189, 80, .5);
+      border-radius: 16px;
+      background: var(--card-bg, #fff);
+    }
+
+    .review-form label {
+      display: block;
+      margin: 15px 0 7px;
+      font-weight: 600;
+    }
+
+    .review-form input,
+    .review-form select,
+    .review-form textarea {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font: inherit;
+    }
+
+    .review-btn {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 12px 20px;
+      border: 0;
+      border-radius: 9px;
+      background: #dba83e;
+      color: #101b35;
+      font-weight: bold;
+      font: inherit;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .review-note {
+      padding: 15px;
+      border-left: 4px solid #dba83e;
+      border-radius: 7px;
+      background: rgba(244, 189, 80, .12);
+      line-height: 1.7;
+    }
+
+    .review-status {
+      margin-top: 15px;
+      line-height: 1.7;
+      overflow-wrap: anywhere;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">BEW</span>
+        <span>Brahmani Electrical Works</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button"
+        aria-label="Open navigation">☰</button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" data-gu="હોમ" data-en="Home" data-hi="होम">હોમ</a>
+        <a href="services.html" data-gu="સેવાઓ" data-en="Services" data-hi="सेवाएँ">સેવાઓ</a>
+        <a href="order.html" data-gu="બુકિંગ" data-en="Book Service" data-hi="बुकिंग">બુકિંગ</a>
+        <a href="track.html" data-gu="ઓર્ડર તપાસો" data-en="Track Order" data-hi="ऑर्डर ट्रैक करें">ઓર્ડર તપાસો</a>
+        <a href="reviews.html" data-gu="રીવ્યૂ" data-en="Reviews" data-hi="रिव्यू">રીવ્યૂ</a>
+        <a href="contact.html" data-gu="સંપર્ક" data-en="Contact" data-hi="संपर्क">સંપર્ક</a>
+      </nav>
+
+      <div class="nav-tools">
+        <select id="languageSelect" aria-label="Choose language">
+          <option value="gu">ગુજરાતી</option>
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+        <button id="themeToggle" class="theme-toggle" type="button"
+          aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">BRAHMANI ELECTRICAL WORKS</p>
+        <h1 data-gu="ગ્રાહકોના અભિપ્રાય"
+            data-en="Customer Reviews"
+            data-hi="ग्राहकों की समीक्षाएँ">ગ્રાહકોના અભિપ્રાય</h1>
+        <p data-gu="તમારો અભિપ્રાય અમારી સર્વિસ સુધારવામાં મદદ કરે છે."
+           data-en="Your feedback helps us improve our service."
+           data-hi="आपकी प्रतिक्रिया हमारी सेवा बेहतर बनाने में मदद करती है।">
+          તમારો અભિપ્રાય અમારી સર્વિસ સુધારવામાં મદદ કરે છે.
+        </p>
+      </div>
+    </section>
+
+    <section class="container reviews-section">
+      <h2 data-gu="અમારા ગ્રાહકોના અનુભવ"
+          data-en="Customer Feedback"
+          data-hi="ग्राहकों की प्रतिक्रिया">અમારા ગ્રાહકોના અનુભવ</h2>
+
+      <p class="review-note"
+         data-gu="હાલમાં અહીં કોઈ ચકાસેલા ગ્રાહક રિવ્યૂ ઉમેરેલા નથી. ગ્રાહકોની સાચી મંજૂરી મળ્યા પછી જ તેમના અભિપ્રાય પ્રકાશિત કરવા."
+         data-en="No verified customer reviews have been added yet. Publish customer feedback only after receiving their permission."
+         data-hi="अभी कोई सत्यापित ग्राहक समीक्षा नहीं जोड़ी गई है। ग्राहक की अनुमति मिलने के बाद ही उनकी प्रतिक्रिया प्रकाशित करें।">
+        હાલમાં અહીં કોઈ ચકાસેલા ગ્રાહક રિવ્યૂ ઉમેરેલા નથી. ગ્રાહકોની સાચી મંજૂરી મળ્યા પછી જ તેમના અભિપ્રાય પ્રકાશિત કરવા.
+      </p>
+
+      <div class="review-grid">
+        <article class="review-card">
+          <div class="review-stars" aria-label="Five stars">★★★★★</div>
+          <h3 data-gu="તમારો અભિપ્રાય અહીં આવશે"
+              data-en="Your feedback can appear here"
+              data-hi="आपकी प्रतिक्रिया यहाँ दिखाई दे सकती है">તમારો અભિપ્રાય અહીં આવશે</h3>
+          <p data-gu="ગ્રાહકની મંજૂરી પછી તેમનો સાચો અભિપ્રાય અહીં ઉમેરવામાં આવશે."
+             data-en="A genuine customer review can be added here with permission."
+             data-hi="ग्राहक की अनुमति से उनकी वास्तविक समीक्षा यहाँ जोड़ी जा सकती है।">
+            ગ્રાહકની મંજૂરી પછી તેમનો સાચો અભિપ્રાય અહીં ઉમેરવામાં આવશે.
+          </p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="Five stars">★★★★★</div>
+          <h3 data-gu="સર્વિસનો અનુભવ શેર કરો"
+              data-en="Share your service experience"
+              data-hi="अपना अनुभव साझा करें">સર્વિસનો અનુભવ શેર કરો</h3>
+          <p data-gu="તમારો સાચો અનુભવ અમને વધુ સારી સેવા આપવા મદદ કરશે."
+             data-en="Your honest feedback helps us improve our service."
+             data-hi="आपकी ईमानदार प्रतिक्रिया बेहतर सेवा देने में मदद करेगी।">
+            તમારો સાચો અનુભવ અમને વધુ સારી સેવા આપવા મદદ કરશે.
+          </p>
+        </article>
+      </div>
+
+      <div class="review-form">
+        <h2 data-gu="તમારો રિવ્યૂ મોકલો"
+            data-en="Submit Your Review"
+            data-hi="अपनी समीक्षा भेजें">તમારો રિવ્યૂ મોકલો</h2>
+
+        <form id="reviewForm">
+          <label for="reviewName"
+            data-gu="તમારું નામ"
+            data-en="Your Name"
+            data-hi="आपका नाम">તમારું નામ</label>
+          <input id="reviewName" type="text" maxlength="70"
+            placeholder="Enter your name" required>
+
+          <label for="reviewRating"
+            data-gu="તમારું રેટિંગ"
+            data-en="Your Rating"
+            data-hi="आपकी रेटिंग">તમારું રેટિંગ</label>
+          <select id="reviewRating" required>
+            <option value="">રેટિંગ પસંદ કરો</option>
+            <option value="5">★★★★★ - 5/5</option>
+            <option value="4">★★★★☆ - 4/5</option>
+            <option value="3">★★★☆☆ - 3/5</option>
+            <option value="2">★★☆☆☆ - 2/5</option>
+            <option value="1">★☆☆☆☆ - 1/5</option>
+          </select>
+
+          <label for="reviewService"
+            data-gu="કઈ સર્વિસ લીધી હતી?"
+            data-en="Which service did you use?"
+            data-hi="आपने कौन-सी सेवा ली?">કઈ સર્વિસ લીધી હતી?</label>
+          <select id="reviewService" required>
+            <option value="">સર્વિસ પસંદ કરો</option>
+            <option>Electrical Wiring</option>
+            <option>Light Fitting</option>
+            <option>Fan Fitting</option>
+            <option>Inverter Work</option>
+            <option>Electrical Repairing</option>
+            <option>Other Electrical Work</option>
+          </select>
+
+          <label for="reviewText"
+            data-gu="તમારો અભિપ્રાય"
+            data-en="Your Feedback"
+            data-hi="आपकी प्रतिक्रिया">તમારો અભિપ્રાય</label>
+          <textarea id="reviewText" rows="5" maxlength="1000"
+            placeholder="Write your honest feedback..." required></textarea>
+
+          <button class="review-btn" type="submit"
+            data-gu="WhatsApp દ્વારા રિવ્યૂ મોકલો"
+            data-en="Send Review via WhatsApp"
+            data-hi="WhatsApp से समीक्षा भेजें">WhatsApp દ્વારા રિવ્યૂ મોકલો</button>
+        </form>
+
+        <div id="reviewStatus" class="review-status" aria-live="polite"></div>
+
+        <p class="review-note">
+          <strong>નોંધ:</strong>
+          આ ફોર્મ રિવ્યૂ WhatsApp પર મોકલવા માટે છે. રિવ્યૂ આપમેળે વેબસાઇટ પર સેવ કે પ્રકાશિત થતો નથી.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Brahmani Electrical Works</p>
+      <p>Owner: Mr. Kiran Prajapati</p>
+      <p>Call: <a href="tel:9426521721">9426521721</a> |
+        <a href="tel:7043731721">7043731721</a></p>
+      <p>Ankleshwar, Gujarat</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.getElementById("reviewForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("reviewName").value.trim();
+      const rating = document.getElementById("reviewRating").value;
+      const service = document.getElementById("reviewService").value;
+      const feedback = document.getElementById("reviewText").value.trim();
+
+      if (!name || !rating || !service || !feedback) {
+        document.getElementById("reviewStatus").textContent =
+          "કૃપા કરીને બધી વિગતો ભરો.";
+        return;
+      }
+
+      const message =
+        "નમસ્તે Brahmani Electrical Works!\n\n" +
+        "Customer Review\n" +
+        "નામ: " + name + "\n" +
+        "Rating: " + rating + "/5\n" +
+        "Service: " + service + "\n" +
+        "Feedback: " + feedback + "\n\n" +
+        "આ રિવ્યૂ વેબસાઇટ પર મૂકતા પહેલાં મારી મંજૂરી લો.";
+
+      document.getElementById("reviewStatus").textContent =
+        "WhatsApp ખુલશે. મેસેજ તપાસીને Send દબાવજો.";
+
+      const url = "https://wa.me/919426521721?text=" +
+        encodeURIComponent(message);
+
+      window.open(url, "_blank", "noopener,noreferrer");
+    });
+  </script>
+</body>
+</html>
+```

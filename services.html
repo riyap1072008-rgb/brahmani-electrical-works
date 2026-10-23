@@ -1,0 +1,1033 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101b35">
+  <meta name="description" content="Brahmani Electrical Works - House Wiring, Electrical Services, Appliance Installation and Maintenance Services in Ankleshwar, Gujarat.">
+  <title>Our Services | Brahmani Electrical Works</title>
+
+  <style>
+    :root {
+      --navy: #101b35;
+      --navy-light: #1b2945;
+      --gold: #f4bd50;
+      --bg: #f4f6fb;
+      --card: #ffffff;
+      --text: #172033;
+      --muted: #68748a;
+      --border: #e1e6ef;
+      --shadow: 0 10px 30px rgba(16, 27, 53, .08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background .3s, color .3s;
+    }
+
+    body.dark {
+      --bg: #0b1220;
+      --card: #151f32;
+      --text: #f1f4fa;
+      --muted: #b2bdd0;
+      --border: #29364d;
+      --shadow: 0 10px 30px rgba(0, 0, 0, .2);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, select {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* Header */
+    header {
+      background: var(--navy);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, .15);
+    }
+
+    .navbar {
+      min-height: 82px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      padding: 12px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 25px;
+      font-weight: 900;
+    }
+
+    .brand h2 {
+      color: var(--gold);
+      font-size: 19px;
+      line-height: 1.25;
+    }
+
+    .brand p {
+      font-size: 12px;
+      color: #d8dfed;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: white;
+      font-size: 14px;
+      transition: color .2s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--gold);
+    }
+
+    .tools {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .tool-btn, .language {
+      border: 1px solid #48536b;
+      border-radius: 9px;
+      padding: 8px 10px;
+      background: #1b2945;
+      color: white;
+      cursor: pointer;
+    }
+
+    .language option {
+      color: #111;
+      background: white;
+    }
+
+    /* Hero */
+    .hero {
+      background:
+        radial-gradient(circle at 90% 15%, rgba(244,189,80,.18), transparent 28%),
+        linear-gradient(130deg, #101b35, #203456);
+      color: white;
+      padding: 75px 0 68px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      border: 1px solid rgba(244,189,80,.5);
+      background: rgba(244,189,80,.08);
+      padding: 6px 15px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.2;
+      margin-bottom: 17px;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: auto;
+      color: #d9e1ef;
+      font-size: 16px;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 27px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: 700;
+      border: 1px solid transparent;
+      transition: transform .2s, background .2s;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .btn-outline {
+      border-color: #8490a6;
+      color: white;
+      background: transparent;
+    }
+
+    /* Service categories */
+    .services-section {
+      padding: 65px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .section-heading .small-title {
+      color: #b17b15;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+
+    body.dark .section-heading .small-title {
+      color: var(--gold);
+    }
+
+    .section-heading h2 {
+      color: var(--text);
+      font-size: clamp(26px, 4vw, 36px);
+      margin: 5px 0 8px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    .category {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 19px;
+      margin-bottom: 28px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      animation: rise .65s ease both;
+    }
+
+    .category:nth-of-type(2) { animation-delay: .05s; }
+    .category:nth-of-type(3) { animation-delay: .1s; }
+    .category:nth-of-type(4) { animation-delay: .15s; }
+    .category:nth-of-type(5) { animation-delay: .2s; }
+
+    .category-heading {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 25px 28px;
+      background: var(--navy);
+      color: white;
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .category-icon {
+      flex: 0 0 62px;
+      width: 62px;
+      height: 62px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 29px;
+    }
+
+    .category-number {
+      font-size: 12px;
+      color: var(--gold);
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .category-heading h3 {
+      color: white;
+      font-size: clamp(20px, 3vw, 27px);
+      line-height: 1.3;
+      margin: 3px 0 5px;
+    }
+
+    .category-heading p {
+      color: #d0d9e8;
+      font-size: 14px;
+    }
+
+    /* Smaller services underneath */
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 13px;
+      padding: 23px;
+    }
+
+    .service-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      background: var(--bg);
+      transition: transform .2s, border-color .2s;
+    }
+
+    .service-item:hover {
+      transform: translateY(-3px);
+      border-color: var(--gold);
+    }
+
+    .check {
+      flex: 0 0 25px;
+      width: 25px;
+      height: 25px;
+      border-radius: 8px;
+      background: rgba(244,189,80,.22);
+      color: #9a690c;
+      display: grid;
+      place-items: center;
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    body.dark .check {
+      color: var(--gold);
+    }
+
+    .service-item h4 {
+      font-size: 14px;
+      line-height: 1.45;
+      color: var(--text);
+    }
+
+    .service-item p {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    /* CTA */
+    .cta {
+      background: var(--navy);
+      color: white;
+      border-radius: 20px;
+      padding: 38px 28px;
+      text-align: center;
+      margin: 15px 0 60px;
+      border: 1px solid #344360;
+    }
+
+    .cta h2 {
+      font-size: clamp(24px, 4vw, 32px);
+      margin-bottom: 10px;
+    }
+
+    .cta h2 span {
+      color: var(--gold);
+    }
+
+    .cta p {
+      color: #d0d9e8;
+      margin-bottom: 22px;
+    }
+
+    /* Footer */
+    footer {
+      background: #0a1224;
+      color: #d3dbea;
+      padding: 28px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .footer-inner strong {
+      color: var(--gold);
+    }
+
+    .footer-inner p {
+      font-size: 13px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      font-size: 13px;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold);
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 850px) {
+      .navbar {
+        justify-content: center;
+      }
+
+      .brand {
+        margin-right: auto;
+      }
+
+      .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        padding-top: 8px;
+        border-top: 1px solid #344360;
+      }
+
+      .service-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 560px) {
+      .navbar {
+        gap: 12px;
+      }
+
+      .brand h2 {
+        font-size: 16px;
+      }
+
+      .brand-icon {
+        width: 42px;
+        height: 42px;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      .nav-links a {
+        font-size: 12px;
+      }
+
+      .tools {
+        width: 100%;
+        justify-content: flex-end;
+      }
+
+      .hero {
+        padding: 55px 0;
+      }
+
+      .category-heading {
+        padding: 19px 16px;
+        gap: 13px;
+      }
+
+      .category-icon {
+        flex-basis: 48px;
+        width: 48px;
+        height: 48px;
+        font-size: 23px;
+      }
+
+      .category-heading p {
+        font-size: 12px;
+      }
+
+      .service-list {
+        grid-template-columns: 1fr;
+        padding: 14px;
+        gap: 9px;
+      }
+
+      .service-item {
+        padding: 12px;
+      }
+
+      .cta {
+        padding: 30px 18px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">⚡</div>
+        <div>
+          <h2>Brahmani Electrical Works</h2>
+          <p data-en="Professional Electrical Solutions"
+             data-gu="પ્રોફેશનલ ઇલેક્ટ્રિકલ સર્વિસ"
+             data-hi="प्रोफेशनल इलेक्ट्रिकल सर्विस">
+            Professional Electrical Solutions
+          </p>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html"
+           data-en="Home" data-gu="હોમ" data-hi="होम">Home</a>
+        <a href="services.html" class="active"
+           data-en="Services" data-gu="સર્વિસ" data-hi="सर्विस">Services</a>
+        <a href="order.html"
+           data-en="Book Service" data-gu="બુક કરો" data-hi="बुक करें">Book Service</a>
+        <a href="contact.html"
+           data-en="Contact" data-gu="સંપર્ક" data-hi="संपर्क">Contact</a>
+      </nav>
+
+      <div class="tools">
+        <select id="language" class="language" aria-label="Choose language">
+          <option value="en">English</option>
+          <option value="gu">ગુજરાતી</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+        <button id="themeToggle" class="tool-btn" type="button"
+                aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow"
+            data-en="OUR EXPERTISE"
+            data-gu="અમારી સર્વિસ"
+            data-hi="हमारी सर्विस">OUR EXPERTISE</span>
+
+      <h1>
+        <span data-en="Electrical Services"
+              data-gu="ઇલેક્ટ્રિકલ સર્વિસ"
+              data-hi="इलेक्ट्रिकल सर्विस">Electrical Services</span>
+        <br>
+        <span data-en="You Can Trust"
+              data-gu="ભરોસાપાત્ર કામ"
+              data-hi="भरोसेमंद काम">You Can Trust</span>
+      </h1>
+
+      <p data-en="Explore our services, from complete house wiring to electrical installation and maintenance in Ankleshwar."
+         data-gu="અંકલેશ્વરમાં હાઉસ વાયરિંગથી લઈને ઇલેક્ટ્રિકલ ફિટિંગ અને મેઇન્ટેનન્સ સુધીની અમારી સર્વિસ જુઓ."
+         data-hi="अंकलेश्वर में हाउस वायरिंग से लेकर इलेक्ट्रिकल फिटिंग और मेंटेनेंस तक हमारी सर्विस देखें।">
+        Explore our services, from complete house wiring to electrical installation and maintenance in Ankleshwar.
+      </p>
+
+      <div class="hero-actions">
+        <a href="order.html" class="btn btn-gold"
+           data-en="📋 Book a Service"
+           data-gu="📋 સર્વિસ બુક કરો"
+           data-hi="📋 सर्विस बुक करें">📋 Book a Service</a>
+
+        <a href="https://wa.me/919426521721?text=Hello%20Brahmani%20Electrical%20Works"
+           target="_blank" rel="noopener noreferrer"
+           class="btn btn-outline"
+           data-en="WhatsApp Us"
+           data-gu="WhatsApp કરો"
+           data-hi="WhatsApp करें">WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <main class="container services-section">
+    <div class="section-heading">
+      <div class="small-title"
+           data-en="WHAT WE DO"
+           data-gu="અમે શું કરીએ છીએ"
+           data-hi="हम क्या करते हैं">WHAT WE DO</div>
+
+      <h2 data-en="Our Service Categories"
+          data-gu="અમારી સર્વિસ કેટેગરી"
+          data-hi="हमारी सर्विस कैटेगरी">Our Service Categories</h2>
+
+      <p data-en="Choose a category to explore the available work."
+         data-gu="કામ જોવા માટે તમારી કેટેગરી પસંદ કરો."
+         data-hi="काम देखने के लिए अपनी कैटेगरी चुनें।">
+        Choose a category to explore the available work.
+      </p>
+    </div>
+
+    <!-- CATEGORY 1 -->
+    <section class="category">
+      <div class="category-heading">
+        <div class="category-icon">🏠</div>
+        <div>
+          <div class="category-number">CATEGORY 01</div>
+          <h3 data-en="House Wiring"
+              data-gu="હાઉસ વાયરિંગ"
+              data-hi="हाउस वायरिंग">House Wiring</h3>
+          <p data-en="Complete wiring solutions for homes and new buildings."
+             data-gu="ઘર અને નવી બિલ્ડિંગ માટે સંપૂર્ણ વાયરિંગ."
+             data-hi="घर और नई बिल्डिंग के लिए संपूर्ण वायरिंग।">
+            Complete wiring solutions for homes and new buildings.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-list">
+        <article class="service-item">
+          <span class="check">✓</span>
+          <div>
+            <h4 data-en="Complete House Wiring"
+                data-gu="સંપૂર્ણ હાઉસ વાયરિંગ"
+                data-hi="पूरी हाउस वायरिंग">Complete House Wiring</h4>
+            <p data-en="Wiring for different rooms and areas."
+               data-gu="ઘરના અલગ-અલગ રૂમનું વાયરિંગ."
+               data-hi="घर के अलग-अलग कमरों की वायरिंग।">Wiring for different rooms and areas.</p>
+          </div>
+        </article>
+
+        <article class="service-item">
+          <span class="check">✓</span>
+          <div>
+            <h4 data-en="New House Wiring"
+                data-gu="નવા ઘરનું વાયરિંગ"
+                data-hi="नए घर की वायरिंग">New House Wiring</h4>
+            <p data-en="Wiring for new homes and buildings."
+               data-gu="નવા ઘર અને બિલ્ડિંગનું વાયરિંગ."
+               data-hi="नए घर और बिल्डिंग की वायरिंग।">Wiring for new homes and buildings.</p>
+          </div>
+        </article>
+
+        <article class="service-item">
+          <span class="check">✓</span>
+          <div>
+            <h4 data-en="Old Wiring Replacement"
+                data-gu="જૂના વાયર બદલવાનું કામ"
+                data-hi="पुरानी वायरिंग बदलना">Old Wiring Replacement</h4>
+            <p data-en="Replacement of old wiring."
+               data-gu="જૂના વાયર બદલવાની સર્વિસ."
+               data-hi="पुरानी वायरिंग बदलने की सर्विस।">Replacement of old wiring.</p>
+          </div>
+        </article>
+
+        <article class="service-item">
+          <span class="check">✓</span>
+          <div>
+            <h4 data-en="Switch Board Wiring"
+                data-gu="સ્વિચ બોર્ડ વાયરિંગ"
+                data-hi="स्विच बोर्ड वायरिंग">Switch Board Wiring</h4>
+            <p data-en="Wiring and connection work for switch boards."
+               data-gu="સ્વિચ બોર્ડનું કનેક્શન અને વાયરિંગ."
+               data-hi="स्विच बोर्ड का कनेक्शन और वायरिंग।">Wiring and connection work for switch boards.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CATEGORY 2 -->
+    <section class="category">
+      <div class="category-heading">
+        <div class="category-icon">⚡</div>
+        <div>
+          <div class="category-number">CATEGORY 02</div>
+          <h3 data-en="Electrical Services"
+              data-gu="ઇલેક્ટ્રિકલ સર્વિસ"
+              data-hi="इलेक्ट्रिकल सर्विस">Electrical Services</h3>
+          <p data-en="Electrical fittings, connections and equipment installation."
+             data-gu="ઇલેક્ટ્રિકલ ફિટિંગ, કનેક્શન અને સાધનો લગાવવાનું કામ."
+             data-hi="इलेक्ट्रिकल फिटिंग, कनेक्शन और उपकरण लगाने का काम।">
+            Electrical fittings, connections and equipment installation.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-list">
+        <article class="service-item">
+          <span class="check">✓</span>
+          <div>
+            <h4 data-en="Light Fitting"
+                data-gu="લાઇટ ફિટિંગ"
+                data-hi="लाइट फिटिंग">Light Fitting</h4>
+            <p data-en="Installation and replacement of lights."
+               data-gu="લાઇટ લગાવવી અને બદલવી."
+               data-hi="लाइट लगाना और बदलना।">Installation and replacement of lights.</p>
+          </div>
+        </article>
+
+        <article class="service-item">
+          <span class="check">✓</span>
+          <div>
+            <h4 data-en="Fan Fitting"
+                data-gu="ફેન ફિટિંગ"
+                data-hi="फैन फिटिंग">Fan Fitting</h4>
+            <p data-en="Ceiling fan installation and connection."
+               data-gu="સીલિંગ ફેન લગાવવો અને કનેક્શન કરવું."
+               data-hi="सीलिंग फैन लगाना और कनेक्शन करना।">Ceiling fan installation and connection.</p>
+          </div>
+        </article>
+
+        <article class="service-item">
+          <span class="check">✓</span>
+          <div>
+            <h4 data-en="Switch & Socket Fitting"
+                data-gu="સ્વિચ અને સોકેટ ફિટિંગ"
+                data-hi="स्विच और सॉकेट फिटिंग">Switch & Socket Fitting</h4>
+            <p data-en="Fitting or replacing switches and sockets."
+               data-gu="સ્વિચ અને સોકેટ લગાવવા કે બદલવા."
+               data-hi="स्विच और सॉकेट लगाना या बदलना।">Fitting or replacing switches and sockets.</p>
+          </div>
+        </article>
+
+        <article class="service-item">
+          <span class="check">✓</span>
+          <div>
+            <h4 data-en="Electrical Equipment Fitting"
+                data-gu="ઇલેક્ટ્રિકલ સાધનોનું ફિટિંગ"
+                data-hi="इलेक्ट्रिकल उपकरण फिटिंग">Electrical Equipment Fitting</h4>
+            <p data-en="Light, fan, inverter and other electrical equipment fitting."
+               data-gu="લાઇટ, ફેન, ઇન્વર્ટર અને અન્ય ઇલેક્ટ્રિકલ સાધનોનું ફિટિંગ."
+               data-hi="लाइट, फैन, इन्वर्टर और अन्य इलेक्ट्रिकल उपकरणों की फिटिंग।">
+              Light, fan, inverter and other electrical equipment fitting.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CATEGORY 3 -->
+    <section class="category">
+      <div class="category-heading">
+        <div class="category-icon">🔌</div>
+        <div>
+          <div class="category-number">CATEGORY 03</div>
+          <h3 data-en="Appliance Installation"
+              data-gu="એપ્લાયન્સ ઇન્સ્ટોલેશન"
+              data-hi="अप्लायंस इंस्टॉलेशन">Appliance Installation</h3>
+          <p data-en="Installation and fitting of electrical appliances and inverters."
+             data-gu="ઇલેક્ટ્રિકલ સાધનો અને ઇન્વર્ટર લગાવવાનું કામ."
+             data-hi="इलेक्ट्रिकल उपकरण और इन्वर्टर लगाने का काम।">
+            Installation and fitting of electrical appliances and inverters.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-list">
+        <article class="service-item">
+          <span class="check">✓</span>
+          <div>
+            <h4 data-en="Inverter Installation"
+                data-gu="ઇન્વર્ટર ઇન્સ્ટોલેશન"
+                data-hi="इन्वर्टर इंस्टॉलेशन">Inverter Installation</h4>
+            <p data-en="Inverter fitting and electrical connections."
+               data-gu="ઇન્વર્ટર ફિટિંગ અને ઇલેક્ટ્રિકલ કનેક્શન."
+               data-hi="इन्वर्टर फिटिंग और इलेक्ट्रिकल कनेक्शन।">Inverter fitting and electrical connections.</p>
+          </div>
+        </article>
+
+        <article class="service-item">
+          <span class="check">✓</span>
+          <div>
+            <h4 data-en="All Types of Inverter Work"
+                data-gu="તમામ પ્રકારનું ઇન્વર્ટર કામ"
+                data-hi="सभी प्रकार के इन्वर्टर का काम">All Types of Inverter Work</h4>
+            <p data-en="Inverter-related fitting and service work."
+               data-gu="ઇન્વર્ટરને લગતું ફિટિંગ અને સર્વિસ કામ."
+               data-hi="इन्वर्टर से जुड़ा फिटिंग और सर्विस का काम।">Inverter-related fitting and service work.</p>
+          </div>
+        </article>
+
+        <article class="service-item">
+          <span class="check">✓</span>
+          <div>
+            <h4 data-en="Electrical Appliance Installation"
+                data-gu="ઇલેક્ટ્રિકલ એપ્લાયન્સ ઇન્સ્ટોલેશન"
+                data-hi="इलेक्ट्रिकल अप्लायंस इंस्टॉलेशन">Electrical Appliance Installation</h4>
+            <p data-en="Installation of suitable electrical appliances."
+               data-gu="યોગ્ય ઇલેક્ટ્રિકલ સાધનો લગાવવાનું કામ."
+               data-hi="उपयुक्त इलेक्ट्रिकल उपकरण लगाने का काम।">Installation of suitable electrical appliances.</p>
+          </div>
+        </article>
+
+        <article class="service-item">
+          <span class="check">✓</span>
+          <div>
+            <h4 data-en="New Equipment Installation"
+                data-gu="નવા સાધનોનું ઇન્સ્ટોલેશન"
+                data-hi="नए उपकरणों का इंस्टॉलेशन">New Equipment Installation</h4>
+            <p data-en="Fitting and connecting new electrical equipment."
+               data-gu="નવા ઇલેક્ટ્રિકલ સાધનો ફિટ કરવા અને કનેક્શન કરવું."
+               data-hi="नए इलेक्ट्रिकल उपकरण लगाना और कनेक्शन करना।">Fitting and connecting new electrical equipment.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CATEGORY 4 -->
+    <section class="category">
+      <div class="category-heading">
+        <div class="category-icon">🛠️</div>
+        <div>
+          <div class="category-number">CATEGORY 04</div>
+          <h3 data-en="Maintenance Services"
+              data-gu="મેઇન્ટેનન્સ સર્વિસ"
+              data-hi="मेंटेनेंस सर्विस">Maintenance Services</h3>
+          <p data-en="Electrical troubleshooting, repairs and maintenance."
+             data-gu="ઇલેક્ટ્રિકલ ખામી શોધવી, રિપેરિંગ અને મેઇન્ટેનન્સ."
+             data-hi="इलेक्ट्रिकल खराबी ढूँढना, रिपेयरिंग और मेंटेनेंस।">
+            Electrical troubleshooting, repairs and maintenance.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-list">
+        <article class="service-item">
+          <span class="check">✓</span>
+          <div>
+            <h4 data-en="Electrical Repairing"
+                data-gu="ઇલેક્ટ્રિકલ રિપેરિંગ"
+                data-hi="इलेक्ट्रिकल रिपेयरिंग">Electrical Repairing</h4>
+            <p data-en="Repair of common electrical faults."
+               data-gu="સામાન્ય ઇલેક્ટ્રિકલ ખામીનું રિપેરિંગ."
+               data-hi="आम इलेक्ट्रिकल खराबियों की मरम्मत।">Repair of common electrical faults.</p>
+          </div>
+        </article>
+
+        <article class="service-item">
+          <span class="check">✓</span>
+          <div>
+            <h4 data-en="Wiring Fault Repair"
+                data-gu="વાયરિંગની ખામીનું રિપેરિંગ"
+                data-hi="वायरिंग की खराबी की मरम्मत">Wiring Fault Repair</h4>
+            <p data-en="Checking and repairing wiring problems."
+               data-gu="વાયરિંગની ખામી તપાસવી અને રિપેર કરવી."
+               data-hi="वायरिंग की खराबी जाँचना और ठीक करना।">Checking and repairing wiring problems.</p>
+          </div>
+        </article>
+
+        <article class="service-item">
+          <span class="check">✓</span>
+          <div>
+            <h4 data-en="Light & Fan Repair"
+                data-gu="લાઇટ અને ફેન રિપેરિંગ"
+                data-hi="लाइट और फैन रिपेयरिंग">Light & Fan Repair</h4>
+            <p data-en="Troubleshooting light and fan issues."
+               data-gu="લાઇટ અને ફેનની ખામી તપાસવી."
+               data-hi="लाइट और फैन की खराबी जाँचना।">Troubleshooting light and fan issues.</p>
+          </div>
+        </article>
+
+        <article class="service-item">
+          <span class="check">✓</span>
+          <div>
+            <h4 data-en="Regular Electrical Maintenance"
+                data-gu="નિયમિત ઇલેક્ટ્રિકલ મેઇન્ટેનન્સ"
+                data-hi="नियमित इलेक्ट्रिकल मेंटेनेंस">Regular Electrical Maintenance</h4>
+            <p data-en="Routine checking of electrical installations."
+               data-gu="ઇલેક્ટ્રિકલ ઇન્સ્ટોલેશનની નિયમિત તપાસ."
+               data-hi="इलेक्ट्रिकल इंस्टॉलेशन की नियमित जाँच।">Routine checking of electrical installations.</p>
+          </div>
+        </article>
+
+        <article class="service-item">
+          <span class="check">✓</span>
+          <div>
+            <h4 data-en="Home Maintenance"
+                data-gu="ઘરનું ઇલેક્ટ્રિકલ મેઇન્ટેનન્સ"
+                data-hi="घर का इलेक्ट्रिकल मेंटेनेंस">Home Maintenance</h4>
+            <p data-en="Electrical maintenance for homes."
+               data-gu="ઘરના ઇલેક્ટ્રિકલ કામનું મેઇન્ટેનન્સ."
+               data-hi="घर के इलेक्ट्रिकल काम का मेंटेनेंस।">Electrical maintenance for homes.</p>
+          </div>
+        </article>
+
+        <article class="service-item">
+          <span class="check">✓</span>
+          <div>
+            <h4 data-en="Shop & Office Maintenance"
+                data-gu="દુકાન અને ઓફિસ મેઇન્ટેનન્સ"
+                data-hi="दुकान और ऑफिस मेंटेनेंस">Shop & Office Maintenance</h4>
+            <p data-en="Electrical maintenance for shops and offices."
+               data-gu="દુકાન અને ઓફિસના ઇલેક્ટ્રિકલ કામનું મેઇન્ટેનન્સ."
+               data-hi="दुकान और ऑफिस के इलेक्ट्रिकल काम का मेंटेनेंस।">Electrical maintenance for shops and offices.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="cta">
+      <h2 data-en="Need Electrical <span>Service?</span>"
+          data-gu="ઇલેક્ટ્રિકલ <span>સર્વિસ</span> જોઈએ છે?"
+          data-hi="इलेक्ट्रिकल <span>सर्विस</span> चाहिए?">
+        Need Electrical <span>Service?</span>
+      </h2>
+
+      <p data-en="Contact Brahmani Electrical Works for service in Ankleshwar, Gujarat."
+         data-gu="અંકલેશ્વર, ગુજરાતમાં સર્વિસ માટે Brahmani Electrical Works નો સંપર્ક કરો."
+         data-hi="अंकलेश्वर, गुजरात में सर्विस के लिए Brahmani Electrical Works से संपर्क करें।">
+        Contact Brahmani Electrical Works for service in Ankleshwar, Gujarat.
+      </p>
+
+      <div class="hero-actions">
+        <a href="order.html" class="btn btn-gold"
+           data-en="Book a Service"
+           data-gu="સર્વિસ બુક કરો"
+           data-hi="सर्विस बुक करें">Book a Service</a>
+
+        <a href="https://wa.me/919426521721?text=Hello%20Brahmani%20Electrical%20Works"
+           target="_blank" rel="noopener noreferrer"
+           class="btn btn-outline">WhatsApp: 9426521721</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <strong>Brahmani Electrical Works</strong>
+        <p data-en="Owner: Mr. Kiran Prajapati"
+           data-gu="માલિક: શ્રી કિરણ પ્રજાપતિ"
+           data-hi="मालिक: श्री किरण प्रजापति">Owner: Mr. Kiran Prajapati</p>
+        <p>📍 Ankleshwar, Gujarat</p>
+        <p>📞 9426521721 | 7043731721</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html"
+           data-en="Home" data-gu="હોમ" data-hi="होम">Home</a>
+        <a href="services.html"
+           data-en="Services" data-gu="સર્વિસ" data-hi="सर्विस">Services</a>
+        <a href="order.html"
+           data-en="Book Service" data-gu="બુક કરો" data-hi="बुक करें">Book Service</a>
+        <a href="contact.html"
+           data-en="Contact" data-gu="સંપર્ક" data-hi="संपर्क">Contact</a>
+      </div>
+
+      <p>© <span id="year"></span> Brahmani Electrical Works</p>
+    </div>
+  </footer>
+
+  <script>
+    // Dark / Light mode
+    const themeToggle = document.getElementById("themeToggle");
+
+    themeToggle.addEventListener("click", function () {
+      document.body.classList.toggle("dark");
+      const isDark = document.body.classList.contains("dark");
+      themeToggle.textContent = isDark ? "☀️" : "🌙";
+      themeToggle.setAttribute(
+        "aria-label",
+        isDark ? "Switch to light mode" : "Switch to dark mode"
+      );
+    });
+
+    // Language switcher
+    const languageSelect = document.getElementById("language");
+
+    function changeLanguage(language) {
+      document.documentElement.lang = language;
+
+      document.querySelectorAll("[data-" + language + "]").forEach(function (element) {
+        const translatedText = element.getAttribute("data-" + language);
+
+        if (translatedText !== null) {
+          element.innerHTML = translatedText;
+        }
+      });
+
+      try {
+        localStorage.setItem("brahmaniServicesLanguage", language);
+      } catch (error) {
+        // The page still works if browser storage is unavailable.
+      }
+    }
+
+    languageSelect.addEventListener("change", function () {
+      changeLanguage(languageSelect.value);
+    });
+
+    try {
+      const savedLanguage = localStorage.getItem("brahmaniServicesLanguage");
+      if (["en", "gu", "hi"].includes(savedLanguage)) {
+        languageSelect.value = savedLanguage;
+      }
+    } catch (error) {
+      // Use English if browser storage is unavailable.
+    }
+
+    changeLanguage(languageSelect.value);
+
+    // Current year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

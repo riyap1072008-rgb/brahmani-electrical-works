@@ -1,0 +1,309 @@
+```html
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Track your Brahmani Electrical Works service request in Ankleshwar.">
+  <title>Track Order | Brahmani Electrical Works</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .track-section {
+      max-width: 760px;
+      margin: 45px auto;
+      padding: 25px;
+    }
+
+    .track-card {
+      background: var(--card-bg, #fff);
+      border: 1px solid rgba(244, 189, 80, .5);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+    }
+
+    .track-card h2 {
+      margin-top: 0;
+      color: var(--gold, #d9a12e);
+    }
+
+    .track-card label {
+      display: block;
+      margin: 16px 0 7px;
+      font-weight: 600;
+    }
+
+    .track-card input,
+    .track-card select,
+    .track-card textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 9px;
+      font: inherit;
+      box-sizing: border-box;
+    }
+
+    .track-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .track-btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border: 0;
+      border-radius: 9px;
+      background: #dba83e;
+      color: #101b35;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      font: inherit;
+    }
+
+    .track-btn.secondary {
+      background: #101b35;
+      color: white;
+    }
+
+    .track-note {
+      margin-top: 18px;
+      padding: 14px;
+      border-left: 4px solid #dba83e;
+      background: rgba(244, 189, 80, .12);
+      border-radius: 7px;
+      line-height: 1.7;
+    }
+
+    .track-message {
+      margin-top: 16px;
+      line-height: 1.7;
+      overflow-wrap: anywhere;
+    }
+
+    .track-contact {
+      margin-top: 25px;
+      text-align: center;
+      line-height: 1.9;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">BEW</span>
+        <span>Brahmani Electrical Works</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button"
+        aria-label="Open navigation">☰</button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" data-gu="હોમ" data-en="Home" data-hi="होम">હોમ</a>
+        <a href="services.html" data-gu="સેવાઓ" data-en="Services" data-hi="सेवाएँ">સેવાઓ</a>
+        <a href="order.html" data-gu="બુકિંગ" data-en="Book Service" data-hi="बुकिंग">બુકિંગ</a>
+        <a href="track.html" data-gu="ઓર્ડર તપાસો" data-en="Track Order" data-hi="ऑर्डर ट्रैक करें">ઓર્ડર તપાસો</a>
+        <a href="reviews.html" data-gu="રીવ્યૂ" data-en="Reviews" data-hi="रिव्यू">રીવ્યૂ</a>
+        <a href="contact.html" data-gu="સંપર્ક" data-en="Contact" data-hi="संपर्क">સંપર્ક</a>
+      </nav>
+
+      <div class="nav-tools">
+        <select id="languageSelect" aria-label="Choose language">
+          <option value="gu">ગુજરાતી</option>
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+        <button id="themeToggle" class="theme-toggle" type="button"
+          aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">BRAHMANI ELECTRICAL WORKS</p>
+        <h1 data-gu="તમારો ઓર્ડર તપાસો"
+            data-en="Track Your Order"
+            data-hi="अपना ऑर्डर ट्रैक करें">તમારો ઓર્ડર તપાસો</h1>
+        <p data-gu="તમારા સર્વિસ ઓર્ડર વિશે માહિતી મેળવવા માટે વિગતો ભરો."
+           data-en="Enter your details to ask about your service request."
+           data-hi="अपने सर्विस ऑर्डर की जानकारी के लिए विवरण भरें।">
+          તમારા સર્વિસ ઓર્ડર વિશે માહિતી મેળવવા માટે વિગતો ભરો.
+        </p>
+      </div>
+    </section>
+
+    <section class="container track-section">
+      <div class="track-card">
+        <h2 data-gu="ઓર્ડરની વિગતો"
+            data-en="Order Details"
+            data-hi="ऑर्डर की जानकारी">ઓર્ડરની વિગતો</h2>
+
+        <p data-gu="તમારો Order ID અને બુકિંગ વખતે આપેલો મોબાઇલ નંબર દાખલ કરો."
+           data-en="Enter your Order ID and the mobile number used for booking."
+           data-hi="अपना Order ID और बुकिंग के समय दिया गया मोबाइल नंबर दर्ज करें।">
+          તમારો Order ID અને બુકિંગ વખતે આપેલો મોબાઇલ નંબર દાખલ કરો.
+        </p>
+
+        <form id="trackForm">
+          <label for="orderId"
+            data-gu="Order ID"
+            data-en="Order ID"
+            data-hi="ऑर्डर आईडी">Order ID</label>
+          <input id="orderId" name="orderId" type="text"
+            placeholder="Example: BEW-1001" required maxlength="40">
+
+          <label for="customerPhone"
+            data-gu="મોબાઇલ નંબર"
+            data-en="Mobile Number"
+            data-hi="मोबाइल नंबर">મોબાઇલ નંબર</label>
+          <input id="customerPhone" name="customerPhone" type="tel"
+            inputmode="numeric" placeholder="10-digit mobile number"
+            pattern="[6-9][0-9]{9}" required maxlength="10">
+
+          <div class="track-actions">
+            <button class="track-btn" type="submit"
+              data-gu="સ્ટેટસ માટે પૂછો"
+              data-en="Ask for Status"
+              data-hi="स्टेटस पूछें">સ્ટેટસ માટે પૂછો</button>
+          </div>
+        </form>
+
+        <div id="trackMessage" class="track-message" aria-live="polite"></div>
+
+        <div class="track-note">
+          <strong data-gu="મહત્વપૂર્ણ નોંધ"
+                  data-en="Important Note"
+                  data-hi="महत्वपूर्ण सूचना">મહત્વપૂર્ણ નોંધ</strong>
+          <p data-gu="વેબસાઇટમાં હજી database જોડાયેલું નથી, તેથી અહીંથી ઓર્ડરનું live status સીધું જોઈ શકાતું નથી. WhatsApp દ્વારા વિગતો મોકલીને હાલની સ્થિતિ પૂછી શકો છો."
+             data-en="The database is not connected yet, so live order status cannot be displayed here. You can send your details through WhatsApp to ask for an update."
+             data-hi="अभी वेबसाइट में database नहीं जुड़ा है, इसलिए यहाँ live status नहीं दिख सकता। WhatsApp पर विवरण भेजकर जानकारी पूछ सकते हैं।">
+            વેબસાઇટમાં હજી database જોડાયેલું નથી, તેથી અહીંથી ઓર્ડરનું live status સીધું જોઈ શકાતું નથી. WhatsApp દ્વારા વિગતો મોકલીને હાલની સ્થિતિ પૂછી શકો છો.
+          </p>
+        </div>
+      </div>
+
+      <div class="track-card" style="margin-top:24px">
+        <h2 data-gu="ઓર્ડર કેન્સલ કરવાની વિનંતી"
+            data-en="Request Order Cancellation"
+            data-hi="ऑर्डर रद्द करने का अनुरोध">ઓર્ડર કેન્સલ કરવાની વિનંતી</h2>
+
+        <form id="cancelForm">
+          <label for="cancelOrderId"
+            data-gu="Order ID"
+            data-en="Order ID"
+            data-hi="ऑर्डर आईडी">Order ID</label>
+          <input id="cancelOrderId" type="text" required maxlength="40"
+            placeholder="Enter your Order ID">
+
+          <label for="cancelPhone"
+            data-gu="મોબાઇલ નંબર"
+            data-en="Mobile Number"
+            data-hi="मोबाइल नंबर">મોબાઇલ નંબર</label>
+          <input id="cancelPhone" type="tel" inputmode="numeric"
+            pattern="[6-9][0-9]{9}" maxlength="10" required
+            placeholder="10-digit mobile number">
+
+          <label for="cancelReason"
+            data-gu="કારણ (વૈકલ્પિક)"
+            data-en="Reason (optional)"
+            data-hi="कारण (वैकल्पिक)">કારણ (વૈકલ્પિક)</label>
+          <textarea id="cancelReason" rows="3"
+            placeholder="Cancellation reason"></textarea>
+
+          <div class="track-actions">
+            <button class="track-btn secondary" type="submit"
+              data-gu="કેન્સલ વિનંતી WhatsApp કરો"
+              data-en="Send Cancellation Request"
+              data-hi="रद्द करने का अनुरोध भेजें">કેન્સલ વિનંતી WhatsApp કરો</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="track-contact">
+        <strong>Mr. Kiran Prajapati</strong><br>
+        <span data-gu="ફોન:" data-en="Call:" data-hi="फोन:">ફોન:</span>
+        <a href="tel:9426521721">9426521721</a> |
+        <a href="tel:7043731721">7043731721</a><br>
+        <span data-gu="સેવા વિસ્તાર: અંકલેશ્વર, ગુજરાત"
+              data-en="Service Area: Ankleshwar, Gujarat"
+              data-hi="सेवा क्षेत्र: अंकलेश्वर, गुजरात">સેવા વિસ્તાર: અંકલેશ્વર, ગુજરાત</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Brahmani Electrical Works</p>
+      <p>Owner: Mr. Kiran Prajapati</p>
+      <p>9426521721 | 7043731721</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    const BUSINESS_WHATSAPP = "919426521721";
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function sendWhatsApp(message) {
+      const url = "https://wa.me/" + BUSINESS_WHATSAPP +
+        "?text=" + encodeURIComponent(message);
+      window.open(url, "_blank", "noopener,noreferrer");
+    }
+
+    document.getElementById("trackForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const orderId = document.getElementById("orderId").value.trim();
+      const phone = document.getElementById("customerPhone").value.trim();
+
+      if (!/^[6-9][0-9]{9}$/.test(phone)) {
+        document.getElementById("trackMessage").textContent =
+          "કૃપા કરીને સાચો 10 અંકનો મોબાઇલ નંબર દાખલ કરો.";
+        return;
+      }
+
+      document.getElementById("trackMessage").textContent =
+        "WhatsApp ખોલાઈ રહ્યું છે. ત્યાંથી તમારો Order ID અને મોબાઇલ નંબર મોકલો.";
+
+      sendWhatsApp(
+        "નમસ્તે Brahmani Electrical Works,\n" +
+        "મારે મારા ઓર્ડરનું status જાણવું છે.\n" +
+        "Order ID: " + orderId + "\n" +
+        "મોબાઇલ નંબર: " + phone + "\n" +
+        "કૃપા કરીને ઓર્ડરની હાલની સ્થિતિ જણાવશો."
+      );
+    });
+
+    document.getElementById("cancelForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const orderId = document.getElementById("cancelOrderId").value.trim();
+      const phone = document.getElementById("cancelPhone").value.trim();
+      const reason = document.getElementById("cancelReason").value.trim();
+
+      if (!/^[6-9][0-9]{9}$/.test(phone)) {
+        alert("કૃપા કરીને સાચો 10 અંકનો મોબાઇલ નંબર દાખલ કરો.");
+        return;
+      }
+
+      sendWhatsApp(
+        "નમસ્તે Brahmani Electrical Works,\n" +
+        "મારે ઓર્ડર કેન્સલ કરવાની વિનંતી કરવી છે.\n" +
+        "Order ID: " + orderId + "\n" +
+        "મોબાઇલ નંબર: " + phone + "\n" +
+        "કારણ: " + (reason || "કારણ આપ્યું નથી") + "\n" +
+        "કૃપા કરીને મારી વિનંતી તપાસશો."
+      );
+    });
+  </script>
+</body>
+</html>
+```

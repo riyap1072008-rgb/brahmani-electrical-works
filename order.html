@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101b35">
+  <meta name="description" content="Book electrical services in Ankleshwar with Brahmani Electrical Works.">
+  <title>Book a Service | Brahmani Electrical Works</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .category-box {
+      border: 1px solid var(--border, #e1e6ef);
+      border-radius: 14px;
+      padding: 17px;
+      margin: 16px 0;
+      background: var(--card, #fff);
+    }
+
+    .category-box h3 {
+      background: #101b35;
+      color: #f4bd50;
+      padding: 14px;
+      border-radius: 10px;
+      margin-bottom: 14px;
+      font-size: 18px;
+    }
+
+    .category-box h3 span {
+      display: block;
+      font-size: 12px;
+      color: #e2e7f0;
+      font-weight: normal;
+      margin-top: 4px;
+    }
+
+    .field-note {
+      display: block;
+      margin-top: 6px;
+      font-size: 12px;
+    }
+
+    .form-error {
+      color: #b42318;
+      margin-top: 12px;
+    }
+
+    .form-success {
+      color: #16733b;
+      margin-top: 12px;
+    }
+
+    .required-note {
+      font-size: 13px;
+      color: var(--muted, #68748a);
+      margin: 8px 0 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <a class="brand" href="index.html">
+    <span class="brand-icon">⚡</span>
+    <span>
+      <strong>Brahmani Electrical Works</strong>
+      <small>Ankleshwar, Gujarat</small>
+    </span>
+  </a>
+
+  <button class="menu-toggle" id="menuToggle" type="button"
+          aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+  <nav class="nav" id="mainNav">
+    <a href="index.html" data-en="Home" data-gu="હોમ" data-hi="होम">હોમ</a>
+    <a href="services.html" data-en="Services" data-gu="સેવાઓ" data-hi="सेवाएँ">સેવાઓ</a>
+    <a href="order.html" data-en="Book Service" data-gu="સર્વિસ બુક કરો" data-hi="सर्विस बुक करें">સર્વિસ બુક કરો</a>
+    <a href="track.html" data-en="Track Order" data-gu="ઓર્ડર તપાસો" data-hi="ऑर्डर देखें">ઓર્ડર તપાસો</a>
+    <a href="reviews.html" data-en="Reviews" data-gu="રિવ્યૂ" data-hi="समीक्षाएँ">રિવ્યૂ</a>
+    <a href="contact.html" data-en="Contact" data-gu="સંપર્ક" data-hi="संपर्क">સંપર્ક</a>
+  </nav>
+
+  <div class="header-actions">
+    <select id="languageSelect" aria-label="Select language">
+      <option value="gu">ગુજરાતી</option>
+      <option value="en">English</option>
+      <option value="hi">हिन्दी</option>
+    </select>
+    <button id="themeToggle" class="theme-btn" type="button"
+            aria-label="Toggle theme">🌙</button>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <span class="eyebrow">BRAHMANI ELECTRICAL WORKS</span>
+
+    <h1 data-en="Book Electrical Service"
+        data-gu="ઇલેક્ટ્રિકલ સર્વિસ બુક કરો"
+        data-hi="इलेक्ट्रिकल सर्विस बुक करें">ઇલેક્ટ્રિકલ સર્વિસ બુક કરો</h1>
+
+    <p data-en="Select a service category, choose your work and send your request."
+       data-gu="સર્વિસની કેટેગરી પસંદ કરો, કામ પસંદ કરો અને તમારી વિનંતી મોકલો."
+       data-hi="सर्विस कैटेगरी और काम चुनें, फिर अपना अनुरोध भेजें।">
+      સર્વિસની કેટેગરી પસંદ કરો, કામ પસંદ કરો અને તમારી વિનંતી મોકલો.
+    </p>
+  </section>
+
+  <section class="content-section">
+    <div class="panel">
+      <h2 data-en="Customer Details"
+          data-gu="ગ્રાહકની માહિતી"
+          data-hi="ग्राहक की जानकारी">ગ્રાહકની માહિતી</h2>
+
+      <div class="notice">
+        <strong data-en="Service area: Ankleshwar only"
+                data-gu="સેવા વિસ્તાર: ફક્ત અંકલેશ્વર"
+                data-hi="सेवा क्षेत्र: केवल अंकलेश्वर">
+          સેવા વિસ્તાર: ફક્ત અંકલેશ્વર
+        </strong>
+
+        <p class="muted"
+           data-en="Please enter your correct phone number and full job location."
+           data-gu="કૃપા કરીને સાચો મોબાઇલ નંબર અને કામનું પૂરું લોકેશન આપો."
+           data-hi="कृपया सही मोबाइल नंबर और काम की पूरी लोकेशन दें।">
+          કૃપા કરીને સાચો મોબાઇલ નંબર અને કામનું પૂરું લોકેશન આપો.
+        </p>
+      </div>
+
+      <form id="orderForm">
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label for="customerName"
+              data-en="Customer Name *"
+              data-gu="ગ્રાહકનું નામ *"
+              data-hi="ग्राहक का नाम *">ગ્રાહકનું નામ *</label>
+
+            <input id="customerName" name="customerName" type="text"
+                   autocomplete="name" maxlength="80" required
+                   data-placeholder-en="Enter your full name"
+                   data-placeholder-gu="તમારું પૂરું નામ"
+                   data-placeholder-hi="अपना पूरा नाम लिखें"
+                   placeholder="તમારું પૂરું નામ">
+          </div>
+
+          <div class="form-group">
+            <label for="customerPhone"
+              data-en="Mobile Number *"
+              data-gu="મોબાઇલ નંબર *"
+              data-hi="मोबाइल नंबर *">મોબાઇલ નંબર *</label>
+
+            <input id="customerPhone" name="customerPhone" type="tel"
+                   inputmode="numeric" autocomplete="tel"
+                   pattern="[6-9][0-9]{9}" maxlength="10" required
+                   data-placeholder-en="10-digit mobile number"
+                   data-placeholder-gu="10 અંકનો મોબાઇલ નંબર"
+                   data-placeholder-hi="10 अंकों का मोबाइल नंबर"
+                   placeholder="10 અંકનો મોબાઇલ નંબર">
+          </div>
+
+          <div class="form-group full-width">
+            <label for="serviceCategory"
+              data-en="Select Service Category *"
+              data-gu="સર્વિસની કેટેગરી પસંદ કરો *"
+              data-hi="सर्विस कैटेगरी चुनें *">સર્વિસની કેટેગરી પસંદ કરો *</label>
+
+            <select id="serviceCategory" name="serviceCategory" required>
+              <option value=""
+                data-en="-- Select Category --"
+                data-gu="-- કેટેગરી પસંદ કરો --"
+                data-hi="-- कैटेगरी चुनें --">-- કેટેગરી પસંદ કરો --</option>
+
+              <option value="House Wiring">01. House Wiring</option>
+              <option value="Electrical Services">02. Electrical Services</option>
+              <option value="Appliance Installation">03. Appliance Installation</option>
+              <option value="Maintenance Services">04. Maintenance Services</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="service"
+              data-en="Select Your Work *"
+              data-gu="તમારું કામ પસંદ કરો *"
+              data-hi="अपना काम चुनें *">તમારું કામ પસંદ કરો *</label>
+
+            <select id="service" name="service" required disabled>
+              <option value=""
+                data-en="-- Select a category first --"
+                data-gu="-- પહેલાં કેટેગરી પસંદ કરો --"
+                data-hi="-- पहले कैटेगरी चुनें --">-- પહેલાં કેટેગરી પસંદ કરો --</option>
+            </select>
+
+            <small class="muted field-note"
+              data-en="The work list changes according to your selected category."
+              data-gu="પસંદ કરેલી કેટેગરી પ્રમાણે કામની યાદી બદલાશે."
+              data-hi="आपकी चुनी हुई कैटेगरी के अनुसार काम की सूची बदलेगी।">
+              પસંદ કરેલી કેટેગરી પ્રમાણે કામની યાદી બદલાશે.
+            </small>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="area"
+              data-en="Area *"
+              data-gu="વિસ્તાર *"
+              data-hi="क्षेत्र *">વિસ્તાર *</label>
+
+            <select id="area" name="area" required>
+              <option value=""
+                data-en="-- Select Area --"
+                data-gu="-- વિસ્તાર પસંદ કરો --"
+                data-hi="-- क्षेत्र चुनें --">-- વિસ્તાર પસંદ કરો --</option>
+              <option value="Ankleshwar">Ankleshwar / અંકલેશ્વર / अंकलेश्वर</option>
+              <option value="Other"
+                data-en="Other Area"
+                data-gu="અન્ય વિસ્તાર"
+                data-hi="अन्य क्षेत्र">અન્ય વિસ્તાર</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="address"
+              data-en="Full Address *"
+              data-gu="પૂરું સરનામું *"
+              data-hi="पूरा पता *">પૂરું સરનામું *</label>
+
+            <textarea id="address" name="address" required maxlength="500"
+              data-placeholder-en="House number, street, society or shop address"
+              data-placeholder-gu="મકાન નંબર, શેરી, સોસાયટી અથવા દુકાનનું સરનામું"
+              data-placeholder-hi="मकान नंबर, गली, सोसाइटी या दुकान का पता"
+              placeholder="મકાન નંબર, શેરી, સોસાયટી અથવા દુકાનનું સરનામું"></textarea>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="mapLink"
+              data-en="Google Maps Location Link (Optional)"
+              data-gu="Google Maps લોકેશન લિંક (વૈકલ્પિક)"
+              data-hi="Google Maps लोकेशन लिंक (वैकल्पिक)">Google Maps લોકેશન લિંક (વૈકલ્પિક)</label>
+
+            <input id="mapLink" name="mapLink" type="url" maxlength="1000"
+                   data-placeholder-en="https://maps.google.com/..."
+                   data-placeholder-gu="https://maps.google.com/..."
+                   data-placeholder-hi="https://maps.google.com/..."
+                   placeholder="https://maps.google.com/...">
+
+            <small class="muted field-note"
+              data-en="Open Google Maps → Share → Copy link → paste it here."
+              data-gu="Google Maps ખોલો → Share → Copy link કરો → અહીં પેસ્ટ કરો."
+              data-hi="Google Maps खोलें → Share → Copy link करें → यहाँ पेस्ट करें।">
+              Google Maps ખોલો → Share → Copy link કરો → અહીં પેસ્ટ કરો.
+            </small>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="details"
+              data-en="Additional Work Details (Optional)"
+              data-gu="કામની વધારાની માહિતી (વૈકલ્પિક)"
+              data-hi="काम की अतिरिक्त जानकारी (वैकल्पिक)">કામની વધારાની માહિતી (વૈકલ્પિક)</label>
+
+            <textarea id="details" name="details" maxlength="1000"
+              data-placeholder-en="Write more details about the work"
+              data-placeholder-gu="કામ વિશે વધુ માહિતી લખો"
+              data-placeholder-hi="काम के बारे में अधिक जानकारी लिखें"
+              placeholder="કામ વિશે વધુ માહિતી લખો"></textarea>
+          </div>
+
+        </div>
+
+        <label style="display:flex;gap:10px;align-items:flex-start;margin:15px 0">
+          <input type="checkbox" id="consent" required style="margin-top:7px">
+          <span class="muted"
+            data-en="I agree to share the details I entered through WhatsApp to request this service."
+            data-gu="હું સર્વિસની વિનંતી માટે મારી આપેલી માહિતી WhatsApp દ્વારા શેર કરવા સંમત છું."
+            data-hi="मैं सर्विस अनुरोध के लिए अपनी दी गई जानकारी WhatsApp के माध्यम से साझा करने के लिए सहमत हूँ।">
+            હું સર્વિસની વિનંતી માટે મારી આપેલી માહિતી WhatsApp દ્વારા શેર કરવા સંમત છું.
+          </span>
+        </label>
+
+        <button type="submit" class="btn btn-gold"
+          data-en="Send Request on WhatsApp →"
+          data-gu="WhatsApp પર વિનંતી મોકલો →"
+          data-hi="WhatsApp पर अनुरोध भेजें →">
+          WhatsApp પર વિનંતી મોકલો →
+        </button>
+      </form>
+
+      <p id="orderMessage" class="notice hidden" role="status" aria-live="polite"></p>
+
+      <p class="muted" style="margin-top:16px"
+         data-en="Note: WhatsApp will open with your request. Review the message and press Send. This form does not currently save orders in a database or generate an Order ID."
+         data-gu="નોંધ: WhatsApp ખૂલ્યા પછી મેસેજ ચેક કરીને Send દબાવવો પડશે. આ ફોર્મ હાલમાં database માં ઓર્ડર સાચવતું નથી અને Order ID આપતું નથી."
+         data-hi="ध्यान दें: WhatsApp खुलने पर मैसेज जाँचकर Send दबाएँ। यह फॉर्म अभी ऑर्डर को डेटाबेस में सेव नहीं करता और Order ID नहीं देता।">
+        નોંધ: WhatsApp ખૂલ્યા પછી મેસેજ ચેક કરીને Send દબાવવો પડશે. આ ફોર્મ હાલમાં database માં ઓર્ડર સાચવતું નથી અને Order ID આપતું નથી.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h3 data-en="Need Help?" data-gu="મદદ જોઈએ છે?" data-hi="मदद चाहिए?">મદદ જોઈએ છે?</h3>
+      <p>Owner: Mr. Kiran Prajapati</p>
+      <p>📞 <a href="tel:9426521721">9426521721</a></p>
+      <p>📞 <a href="tel:7043731721">7043731721</a></p>
+      <p>📍 Ankleshwar, Gujarat</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div>
+    <strong>Brahmani Electrical Works</strong>
+    <p>Ankleshwar, Gujarat</p>
+    <p>Owner: Mr. Kiran Prajapati</p>
+  </div>
+  <div>
+    <p>📞 <a href="tel:9426521721">9426521721</a></p>
+    <p>📞 <a href="tel:7043731721">7043731721</a></p>
+    <p>© <span id="year"></span> Brahmani Electrical Works</p>
+  </div>
+</footer>
+
+<a class="whatsapp-float"
+   href="https://wa.me/919426521721?text=Hello%20Brahmani%20Electrical%20Works"
+   target="_blank" rel="noopener noreferrer"
+   aria-label="WhatsApp">☏</a>
+
+<script src="app.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("orderForm");
+  const category = document.getElementById("serviceCategory");
+  const service = document.getElementById("service");
+  const area = document.getElementById("area");
+  const message = document.getElementById("orderMessage");
+  const languageSelect = document.getElementById("languageSelect");
+
+  const services = {
+    "House Wiring": [
+      "Complete House Wiring",
+      "New House Wiring",
+      "Old Wiring Replacement",
+      "Switch Board Wiring"
+    ],
+    "Electrical Services": [
+      "Light Fitting",
+      "Fan Fitting",
+      "Switch & Socket Fitting",
+      "Electrical Equipment Fitting"
+    ],
+    "Appliance Installation": [
+      "Inverter Installation",
+      "All Types of Inverter Work",
+      "Electrical Appliance Installation",
+      "New Equipment Installation"
+    ],
+    "Maintenance Services": [
+      "Electrical Repairing",
+      "Wiring Fault Repair",
+      "Light & Fan Repair",
+      "Regular Electrical Maintenance",
+      "Home Electrical Maintenance",
+      "Shop & Office Electrical Maintenance"
+    ]
+  };
+
+  const categoryNames = {
+    "House Wiring": {
+      en: "House Wiring",
+      gu: "ઘરનું વાયરિંગ",
+      hi: "घर की वायरिंग"
+    },
+    "Electrical Services": {
+      en: "Electrical Services",
+      gu: "ઇલેક્ટ્રિકલ સેવાઓ",
+      hi: "इलेक्ट्रिकल सेवाएँ"
+    },
+    "Appliance Installation": {
+      en: "Appliance Installation",
+      gu: "ઇલેક્ટ્રિકલ સાધનોનું ફિટિંગ",
+      hi: "इलेक्ट्रिकल उपकरण फिटिंग"
+    },
+    "Maintenance Services": {
+      en: "Maintenance Services",
+      gu: "રિપેરિંગ અને જાળવણી",
+      hi: "मरम्मत और रखरखाव"
+    }
+  };
+
+  const serviceNames = {
+    "Complete House Wiring": ["આખા ઘરનું વાયરિંગ", "पूरे घर की वायरिंग"],
+    "New House Wiring": ["નવા ઘરનું વાયરિંગ", "नए घर की वायरिंग"],
+    "Old Wiring Replacement": ["જૂનું વાયરિંગ બદલાવવું", "पुरानी वायरिंग बदलना"],
+    "Switch Board Wiring": ["સ્વિચ બોર્ડનું વાયરિંગ", "स्विच बोर्ड की वायरिंग"],
+    "Light Fitting": ["લાઇટ ફિટિંગ", "लाइट फिटिंग"],
+    "Fan Fitting": ["પંખાનું ફિટિંગ", "पंखा फिटिंग"],
+    "Switch & Socket Fitting": ["સ્વિચ અને સોકેટ ફિટિંગ", "स्विच और सॉकेट फिटिंग"],
+    "Electrical Equipment Fitting": ["ઇલેક્ટ્રિકલ સાધનોનું ફિટિંગ", "इलेक्ट्रिकल उपकरण फिटिंग"],
+    "Inverter Installation": ["ઇન્વર્ટર ઇન્સ્ટોલેશન", "इन्वर्टर इंस्टॉलेशन"],
+    "All Types of Inverter Work": ["ઇન્વર્ટરના તમામ પ્રકારનાં કામ", "इन्वर्टर के सभी प्रकार के काम"],
+    "Electrical Appliance Installation": ["ઇલેક્ટ્રિકલ સાધનોનું ઇન્સ્ટોલેશન", "इलेक्ट्रिकल उपकरण इंस्टॉलेशन"],
+    "New Equipment Installation": ["નવા સાધનોનું ઇન્સ્ટોલેશન", "नए उपकरणों का इंस्टॉलेशन"],
+    "Electrical Repairing": ["ઇલેક્ટ્રિકલ રિપેરિંગ", "इलेक्ट्रिकल मरम्मत"],
+    "Wiring Fault Repair": ["વાયરિંગની ખામીનું રિપેરિંગ", "वायरिंग की खराबी की मरम्मत"],
+    "Light & Fan Repair": ["લાઇટ અને પંખાનું રિપેરિંગ", "लाइट और पंखे की मरम्मत"],
+    "Regular Electrical Maintenance": ["નિયમિત ઇલેક્ટ્રિકલ જાળવણી", "नियमित इलेक्ट्रिकल रखरखाव"],
+    "Home Electrical Maintenance": ["ઘરની ઇલેક્ટ્રિકલ જાળવણી", "घर का इलेक्ट्रिकल रखरखाव"],
+    "Shop & Office Electrical Maintenance": ["દુકાન અને ઓફિસની ઇલેક્ટ્રિકલ જાળવણી", "दुकान और ऑफिस का इलेक्ट्रिकल रखरखाव"]
+  };
+
+  const messages = {
+    en: {
+      chooseCategory: "-- Select Category --",
+      chooseService: "-- Select Your Work --",
+      chooseFirst: "-- Select a category first --",
+      chooseArea: "-- Select Area --",
+      areaError: "Service is currently available in Ankleshwar only. Please select Ankleshwar.",
+      areaOnly: "Service is currently available in Ankleshwar only.",
+      invalidPhone: "Please enter a valid 10-digit Indian mobile number.",
+      invalidService: "Please select a valid category and service.",
+      invalidMap: "Please enter a valid Google Maps HTTPS link or leave it blank.",
+      badMap: "The Google Maps link is not valid. Please check it.",
+      success: "WhatsApp will open. Review your request and press Send. The order is not saved in a database yet.",
+      popup: "Your browser blocked the new window. Use the link below to open WhatsApp.",
+      openWhatsApp: "Open request in WhatsApp"
+    },
+    gu: {
+      chooseCategory: "-- કેટેગરી પસંદ કરો --",
+      chooseService: "-- તમારું કામ પસંદ કરો --",
+      chooseFirst: "-- પહેલાં કેટેગરી પસંદ કરો --",
+      chooseArea: "-- વિસ્તાર પસંદ કરો --",
+      areaError: "હાલમાં સર્વિસ ફક્ત અંકલેશ્વરમાં ઉપલબ્ધ છે. કૃપા કરીને અંકલેશ્વર પસંદ કરો.",
+      areaOnly: "હાલમાં સર્વિસ ફક્ત અંકલેશ્વરમાં ઉપલબ્ધ છે.",
+      invalidPhone: "કૃપા કરીને સાચો 10 અંકનો ભારતીય મોબાઇલ નંબર દાખલ કરો.",
+      invalidService: "કૃપા કરીને કેટેગરી અને કામ યોગ્ય રીતે પસંદ કરો.",
+      invalidMap: "કૃપા કરીને માન્ય Google Maps HTTPS લિંક આપો અથવા ખાલી રાખો.",
+      badMap: "Google Maps લિંક યોગ્ય નથી. તેને ફરી ચેક કરો.",
+      success: "WhatsApp ખોલવામાં આવશે. મેસેજ ચેક કરીને Send દબાવજો. ઓર્ડર હજી database માં સાચવાતો નથી.",
+      popup: "બ્રાઉઝરે નવી વિન્ડો રોકી છે. WhatsApp ખોલવા માટે નીચેની લિંક વાપરો.",
+      openWhatsApp: "WhatsApp પર રિક્વેસ્ટ ખોલો"
+    },
+    hi: {
+      chooseCategory: "-- कैटेगरी चुनें --",
+      chooseService: "-- अपना काम चुनें --",
+      chooseFirst: "-- पहले कैटेगरी चुनें --",
+      chooseArea: "-- क्षेत्र चुनें --",
+      areaError: "फिलहाल सर्विस केवल अंकलेश्वर में उपलब्ध है। कृपया अंकलेश्वर चुनें।",
+      areaOnly: "फिलहाल सर्विस केवल अंकलेश्वर में उपलब्ध है।",
+      invalidPhone: "कृपया 10 अंकों का सही भारतीय मोबाइल नंबर दर्ज करें।",
+      invalidService: "कृपया सही कैटेगरी और काम चुनें।",
+      invalidMap: "कृपया सही Google Maps HTTPS लिंक दें या इसे खाली छोड़ दें।",
+      badMap: "Google Maps लिंक सही नहीं है। कृपया जाँचें।",
+      success: "WhatsApp खुलेगा। मैसेज जाँचकर Send दबाएँ। ऑर्डर अभी डेटाबेस में सेव नहीं होता।",
+      popup: "ब्राउज़र ने नई विंडो रोक दी। WhatsApp खोलने के लिए नीचे दिए लिंक का उपयोग करें।",
+      openWhatsApp: "WhatsApp में अनुरोध खोलें"
+    }
+  };
+
+  function getLanguage() {
+    return languageSelect && messages[languageSelect.value]
+      ? languageSelect.value
+      : "gu";
+  }
+
+  function t(key) {
+    return messages[getLanguage()][key];
+  }
+
+  function showMessage(text, type) {
+    message.textContent = text;
+    message.classList.remove("hidden", "form-error", "form-success");
+    message.classList.add(type === "success" ? "form-success" : "form-error");
+  }
+
+  function clearMessage() {
+    message.textContent = "";
+    message.classList.add("hidden");
+    message.classList.remove("form-error", "form-success");
+  }
+
+  function translatePlaceholders() {
+    const language = getLanguage();
+
+    document.querySelectorAll("[data-placeholder-" + language + "]")
+      .forEach(function (element) {
+        element.placeholder =
+          element.getAttribute("data-placeholder-" + language);
+      });
+
+    document.querySelectorAll("#serviceCategory option").forEach(function (option) {
+      if (option.value === "") {
+        option.textContent = t("chooseCategory");
+      } else if (categoryNames[option.value]) {
+        option.textContent =
+          categoryNames[option.value][language] ||
+          categoryNames[option.value].en;
+      }
+    });
+
+    Array.from(area.options).forEach(function (option) {
+      if (option.value === "") {
+        option.textContent = t("chooseArea");
+      } else if (option.value === "Other") {
+        option.textContent = language === "en"
+          ? "Other Area"
+          : language === "hi" ? "अन्य क्षेत्र" : "અન્ય વિસ્તાર";
+      } else if (option.value === "Ankleshwar") {
+        option.textContent = language === "en"
+          ? "Ankleshwar"
+          : language === "hi" ? "अंकलेश्वर" : "અંકલેશ્વર";
+      }
+    });
+  }
+
+  function renderServices(preserveSelection) {
+    const previousValue = preserveSelection ? service.value : "";
+    const selectedCategory = category.value;
+    const language = getLanguage();
+
+    service.innerHTML = "";
+
+    const placeholder = new Option(
+      selectedCategory ? t("chooseService") : t("chooseFirst"),
+      ""
+    );
+
+    service.add(placeholder);
+
+    if (!services[selectedCategory]) {
+      service.disabled = true;
+      return;
+    }
+
+    service.disabled = false;
+
+    services[selectedCategory].forEach(function (item) {
+      let label = item;
+
+      if (language === "gu" && serviceNames[item]) {
+        label = serviceNames[item][0];
+      } else if (language === "hi" && serviceNames[item]) {
+        label = serviceNames[item][1];
+      }
+
+      service.add(new Option(label, item));
+    });
+
+    if (previousValue && services[selectedCategory].includes(previousValue)) {
+      service.value = previousValue;
+    }
+  }
+
+  category.addEventListener("change", function () {
+    renderServices(false);
+    clearMessage();
+  });
+
+  if (languageSelect) {
+    languageSelect.addEventListener("change", function () {
+      translatePlaceholders();
+      renderServices(true);
+      clearMessage();
+    });
+  }
+
+  area.addEventListener("change", function () {
+    if (area.value === "Other") {
+      showMessage(t("areaError"), "error");
+    } else {
+      clearMessage();
+    }
+  });
+
+  translatePlaceholders();
+  renderServices(false);
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    if (!form.reportValidity()) return;
+
+    if (area.value !== "Ankleshwar") {
+      showMessage(t("areaOnly"), "error");
+      return;
+    }
+
+    const name = document.getElementById("customerName").value.trim();
+    const phone = document.getElementById("customerPhone").value.trim();
+    const selectedCategory = category.value;
+    const selectedService = service.value;
+    const address = document.getElementById("address").value.trim();
+    const mapLink = document.getElementById("mapLink").value.trim();
+    const details = document.getElementById("details").value.trim();
+
+    if (!/^[6-9][0-9]{9}$/.test(phone)) {
+      showMessage(t("invalidPhone"), "error");
+      return;
+    }
+
+    if (!services[selectedCategory] ||
+        !services[selectedCategory].includes(selectedService)) {
+      showMessage(t("invalidService"), "error");
+      return;
+    }
+
+    if (mapLink) {
+      try {
+        const parsedURL = new URL(mapLink);
+        const host = parsedURL.hostname.toLowerCase();
+
+        const validMapsHost =
+          host === "maps.app.goo.gl" ||
+          host === "goo.gl" ||
+          host === "google.com" ||
+          host.endsWith(".google.com");
+
+        if (parsedURL.protocol !== "https:" || !validMapsHost) {
+          showMessage(t("invalidMap"), "error");
+          return;
+        }
+      } catch (error) {
+        showMessage(t("badMap"), "error");
+        return;
+      }
+    }
+
+    const categoryLabel =
+      categoryNames[selectedCategory][getLanguage()] || selectedCategory;
+
+    const selectedServiceLabel =
+      getLanguage() === "gu" && serviceNames[selectedService]
+        ? serviceNames[selectedService][0]
+        : getLanguage() === "hi" && serviceNames[selectedService]
+          ? serviceNames[selectedService][1]
+          : selectedService;
+
+    const text = [
+      "BRAHMANI ELECTRICAL WORKS - SERVICE REQUEST",
+      "",
+      "Customer Name: " + name,
+      "Customer Phone: " + phone,
+      "Category: " + categoryLabel + " (" + selectedCategory + ")",
+      "Selected Work: " + selectedServiceLabel + " (" + selectedService + ")",
+      "Area: Ankleshwar",
+      "Full Address: " + address,
+      "Google Maps Location: " + (mapLink || "Not provided"),
+      "Additional Details: " + (details || "Not provided"),
+      "",
+      "Owner: Mr. Kiran Prajapati",
+      "Please contact the customer to confirm the request."
+    ].join("\n");
+
+    const whatsappURL =
+      "https://wa.me/919426521721?text=" + encodeURIComponent(text);
+
+    showMessage(t("success"), "success");
+
+    const openLink = document.createElement("a");
+    openLink.href = whatsappURL;
+    openLink.target = "_blank";
+    openLink.rel = "noopener noreferrer";
+    openLink.textContent = t("openWhatsApp");
+    openLink.className = "btn btn-gold";
+    openLink.style.display = "inline-block";
+    openLink.style.marginTop = "12px";
+
+    message.appendChild(document.createElement("br"));
+    message.appendChild(openLink);
+
+    const whatsappWindow = window.open(
+      whatsappURL,
+      "_blank",
+      "noopener,noreferrer"
+    );
+
+    if (!whatsappWindow) {
+      showMessage(t("popup"), "error");
+      message.appendChild(document.createElement("br"));
+      message.appendChild(openLink);
+    }
+  });
+});
+</script>
+
+</body>
+</html>
